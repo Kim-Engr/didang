@@ -1,60 +1,54 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website with Login & Signup Form  │ CodingNepal</title>
-    <!-- Google Fonts Link For Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation bar -->
     <header>
         <nav class="navbar">
-           <a href="#" class="logo"></a>
-               <img src="" alt="logo">
-                  <h2>CodingNepal   </h2>
-           </a>
-           <ul class="links">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Porfolio</a></li>
-               <li><a href="#">Courses</a></li>
-               <li><a href="#">About us</a></li>
-               <li><a href="#">Contact us</a></li>
-           </ul>
-           <button class="Login-btn"> LOG IN</button>
+            <a href="#" class="logo">
+                <img src="Fashion Logo.jpeg" alt="logo">
+                <h2>Personal Website</h2>
+            </a>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
         </nav>
     </header>
-    <!-- Popup Form -->
-    <div class="Form-popup">
-        <div class="form-box">
-            <span class="close-btn material-symbols-rounded">close</span>
-            <div class="form=details">
-                <h2>Welcome back</h2>
-                <p>Please log in using personal information to stay</p>
-            </div>
-            <div class="form-content">
-                <h2>LOGIN</h2>
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text"> <required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="password"> <required>
-                        <label>Password</label>
-                    </div>
-                    <a href="#" class="forgot-pass">Forgot password?</a>
-                    <button type="submit">Log In</button>
-                </form>
-                <div class="bottom-link">
-                    Don't have an account?
-                    <a href="#">Signup</a>
-                </div>
-            </div>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Welcome to My Personal Website</h1>
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p id="error-message" class="error"></p>
+        </div>
+        <div id="welcome-message" class="form-container" style="display:none;">
+            <h2>Welcome, <span id="user-name"></span>!</h2>
+            <button onclick="logout()">Logout</button>
         </div>
     </div>
-
-      
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html
