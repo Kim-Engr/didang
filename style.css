@@ -1,19 +1,13 @@
-   /* UNIVERSAL */
-   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&700display=swap');
-
-   *{
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
-       font-family: 'Open Sans', sans-serif;
-}
 
 body {
-    width: 100%;
-    height: 100%;
-    background: url("images/") center / cover no-repeat;
-
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("background\ dark.jpeg") center / cover no-repeat;
 }
+
 header {
     position: fixed;
     width: 100%;
@@ -39,9 +33,9 @@ header {
 }
 
 .navbar .logo img {
-    width: 40px;
+    width: 150px;
     border-radius: 50%;
-} 
+}
 
 .navbar .logo h2 {
     color: #fff;
@@ -56,7 +50,6 @@ header {
 }
 
 .navbar .links a {
-    color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
@@ -66,140 +59,39 @@ header {
     color: #19e8ff;
 }
 
-.navbar .login-btn {
+#app {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    margin: 20px 0;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
     border: none;
-    outline: none;
-    color: #275360;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 10px 18px;
-    border-radius: 3px;
-    cursor: pointer;
-    background: #fff;
-}
-
-.form-popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    max-width: 720px;
-    width: 100%;
-    background: #fff;
-    border: 2px solid #fff;
-    transform: translate(-50%, -50%);
-}
-
-.form-popup .close-btn {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    color: #878484;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.form-popup .form-box {
-    display: flex;
+button:hover {
+    background-color: #218838;
 }
 
-.form-box .form-details {
-    max-width: 330px;
-    width: 100%;
-    color: #fff;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url("image");
-    background-size: cover;
-    background-position: center;
-}
-
-.form-box h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.form-box .form-content {
-    width: 100%;
-    padding: 35px;
-}
-
-form .input-field {
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-}
-
-form .input-field input {
-    width: 100%;
-    height: 100%;
-    outline: none;
-    padding: 0 15px;
-    font-size: 0.95rem;
-    border-radius: 3px;
-    border: 1px solid #717171;
-}
-
-.input-field .input:focus {
-    border-color: #00bcd4;
-}
-
-.input-field input:is(:focus, :valid) {
-    padding: 16px 15px 0;
-}
-
-form .input-field label {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    color: #717171;
-    pointer-events: none;
-    transform: translateY(-50%);
-    transition: 0.2s ease;    
-}
-
-.input-field .input:is(:focus, :valid) ~ label {
-    color: #00bcd4;
-    font-size: 0.75rem;
-    transform: translateY(-120%);    
-}
-
-.form-box a {
-    color: #00bcd4;
-    text-decoration: none;
-}
-
-.form-box a:hover {
-    text-decoration: underline  ;
-}
-
-.form-box .forgot-pass {
-    display: inline-flex;
-    margin-top: 14px;
-    font-size: 0.95rem;
-}
-
-form button {
-    width: 100%;
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 14px 0;
-    border-radius: 3px;
-    margin: 25px 0;
-    color: #fff;
-    cursor: pointer;
-    background: #00bcd4;
-    transition: 0.2s ease;
-}
-
-form button:hover {
-    background: #0097a7;
-}
-
-.form-box .bottom-link {
-    text-align: center;
+.error {
+    color: red;
 }
